@@ -1,0 +1,26 @@
+name: tiu_adaptive
+description: TIU Adaptive — Tes Intelegensi Umum Procedural Generation & AQG
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_math_fork: ^0.7.2
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon.svg
+    - assets/data/tips_data.json
+    - assets/data/questions.json

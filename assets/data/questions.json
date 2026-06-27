@@ -1,0 +1,107 @@
+[
+  {
+    "text": "Matahari : Terang = ... : ...",
+    "opts": ["Bintang : Angkasa", "Lampu : Listrik", "Es : Dingin", "Api : Panas"],
+    "answer": "Es : Dingin",
+    "topic": "Analogi Verbal",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Matahari memiliki sifat terang (Matahari identik dengan terang), seperti halnya Es memiliki sifat dingin."
+  },
+  {
+    "text": "Semua manusia adalah makhluk hidup. Semua mahasiswa adalah manusia. Kesimpulannya adalah...",
+    "opts": [
+      "Semua mahasiswa adalah makhluk hidup",
+      "Tidak semua mahasiswa adalah makhluk hidup",
+      "Sebagian mahasiswa bukan makhluk hidup",
+      "Semua makhluk hidup adalah mahasiswa"
+    ],
+    "answer": "Semua mahasiswa adalah makhluk hidup",
+    "topic": "Silogisme",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Berdasarkan premis mayor dan minor, semua mahasiswa termasuk dalam kategori manusia, dan semua manusia adalah makhluk hidup. Jadi, semua mahasiswa adalah makhluk hidup."
+  },
+  {
+    "text": "Jika A lebih tinggi dari B, dan B lebih tinggi dari C. Maka...",
+    "opts": [
+      "A lebih rendah dari C",
+      "C lebih tinggi dari A",
+      "A lebih tinggi dari C",
+      "A dan C sama tinggi"
+    ],
+    "answer": "A lebih tinggi dari C",
+    "topic": "Penalaran Analitis",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Menggunakan hubungan transitif: A > B dan B > C, maka A > C."
+  },
+  {
+    "text": "Hasil perkalian dari 125 dengan 8 adalah...",
+    "opts": ["900", "1000", "1100", "1200"],
+    "answer": "1000",
+    "topic": "Aritmetika",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "125 x 8 = 1000. Rumus dasar aritmetika."
+  },
+  {
+    "text": "Lanjutan dari deret angka berikut: 2, 4, 8, 16, 32, ... adalah...",
+    "opts": ["48", "64", "80", "96"],
+    "answer": "64",
+    "topic": "Deret Angka",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Pola deret dikalikan 2 (x2). Suku berikutnya setelah 32 adalah 32 x 2 = 64."
+  },
+  {
+    "text": "Jika 3x + 5 = 20, berapakah nilai x?",
+    "opts": ["3", "4", "5", "6"],
+    "answer": "5",
+    "topic": "Aljabar",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "3x = 20 - 5 => 3x = 15 => x = 5."
+  },
+  {
+    "text": "Berapakah FPB dari 24 dan 36?",
+    "opts": ["6", "8", "12", "18"],
+    "answer": "12",
+    "topic": "Logika & Geometri",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Faktor dari 24: 1, 2, 3, 4, 6, 8, 12, 24. Faktor dari 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Faktor persekutuan terbesar adalah 12."
+  },
+  {
+    "text": "Mobil : Bensin = Pelari : ...",
+    "opts": ["Sepatu", "Lintasan", "Makanan", "Medali"],
+    "answer": "Makanan",
+    "topic": "Analogi Verbal",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Mobil membutuhkan bensin sebagai sumber energi untuk bergerak, seperti pelari membutuhkan makanan sebagai sumber energi."
+  },
+  {
+    "text": "Semua mamalia menyusui anaknya. Lumba-lumba adalah mamalia. Kesimpulan yang sah adalah...",
+    "opts": [
+      "Semua lumba-lumba menyusui anaknya",
+      "Lumba-lumba tidak menyusui anaknya",
+      "Sebagian lumba-lumba tidak menyusui anaknya",
+      "Lumba-lumba bukan mamalia"
+    ],
+    "answer": "Semua lumba-lumba menyusui anaknya",
+    "topic": "Silogisme",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Karena lumba-lumba termasuk mamalia, maka lumba-lumba menyusui anaknya."
+  },
+  {
+    "text": "Dalam suatu antrean, Dani berada di depan Eko. Eko berada di belakang Fani. Fani berada di depan Dani. Siapakah yang berada di posisi paling depan?",
+    "opts": ["Dani", "Eko", "Fani", "Tidak dapat ditentukan"],
+    "answer": "Fani",
+    "topic": "Penalaran Analitis",
+    "tag": "DATABASE",
+    "difficulty": "hard",
+    "explanation": "Urutan antrean dari depan ke belakang: Fani -> Dani -> Eko. Jadi, Fani berada di posisi paling depan."
+  }
+]

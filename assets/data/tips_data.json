@@ -1,0 +1,47 @@
+{
+  "tipsMap": {
+    "arithmetic": [
+      { "num": "01", "text": "Kerjakan operasi dalam tanda kurung lebih dulu, lalu ×÷, baru ±." },
+      { "num": "02", "text": "Diskon: kalikan harga × persen, hasilnya dikurang harga awal." },
+      { "num": "03", "text": "Persentase cepat: 10% = geser koma satu, 5% = setengahnya." },
+      { "num": "04", "text": "Jarak = kecepatan × waktu. Hafalkan rumus ini." }
+    ],
+    "sequence": [
+      { "num": "01", "text": "Cek selisih antar suku: jika sama → deret aritmetika." },
+      { "num": "02", "text": "Jika selisih tidak sama, cek selisih dari selisih (bertingkat)." },
+      { "num": "03", "text": "Jika suku dibagi suku sebelumnya sama → deret geometri (rasio tetap)." },
+      { "num": "04", "text": "Deret Fibonacci: suku = jumlah dua suku sebelumnya. Cek dulu!" }
+    ],
+    "algebra": [
+      { "num": "01", "text": "Isolasi variabel: pindahkan konstanta ke kanan, koefisien bagi." },
+      { "num": "02", "text": "Sistem persamaan: tambahkan/kurangkan kedua persamaan untuk eliminasi." },
+      { "num": "03", "text": "Substitusi nilai $x$ ke persamaan lain untuk cek kebenaran jawaban." },
+      { "num": "04", "text": "Ingat: $x^2$ berarti $x \\times x$, bukan $x \\times 2$." }
+    ],
+    "logic": [
+      { "num": "01", "text": "KPK: $\\text{KPK}(a,b) = \\dfrac{a \\times b}{\\text{FPB}(a,b)}$" },
+      { "num": "02", "text": "Jumlah $1$ s.d. $n$ = $\\dfrac{n(n+1)}{2}$. Rumus cepat!" },
+      { "num": "03", "text": "Luas persegi panjang $= p \\times l$. Keliling $= 2(p + l)$." },
+      { "num": "04", "text": "FPB: faktor persekutuan terbesar — cari dengan pembagian bertahap." }
+    ],
+    "mixed": [
+      { "num": "01", "text": "Baca soal dua kali: sekali untuk memahami, sekali untuk menjawab." },
+      { "num": "02", "text": "Eliminasi dulu pilihan yang jelas salah — persempit ke 2 opsi." },
+      { "num": "03", "text": "Kerjakan soal mudah lebih dulu, tandai soal sulit untuk dikerjakan belakangan." },
+      { "num": "04", "text": "Estimasi cepat: bulatkan angka dulu untuk cek apakah jawaban masuk akal." },
+      { "num": "05", "text": "Jangan terpaku satu soal terlalu lama — waktu TIU sangat terbatas." }
+    ]
+  },
+  "categoryLabels": {
+    "arithmetic": "Aritmetika",
+    "sequence": "Deret Angka",
+    "algebra": "Aljabar",
+    "logic": "Logika & Geometri",
+    "mixed": "Campuran"
+  },
+  "difficultyLabels": {
+    "easy": "Mudah",
+    "medium": "Sedang",
+    "hard": "Sulit"
+  }
+}
