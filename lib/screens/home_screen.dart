@@ -12,10 +12,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('TIU Adaptive'),
       ),
-      body: const SingleChildScrollView(
-        padding: EdgeInsets.fromLTRB(16, 16, 16, 32),
-        child: ProcGenPanel(),
-      ),
+      body: const ProcGenPanel(),
     );
   }
 }

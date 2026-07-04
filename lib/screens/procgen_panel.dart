@@ -45,58 +45,71 @@ class _ProcGenView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        const _InfoCard(),
-        const SizedBox(height: 12),
-        _ControlsCard(
-          category: vm.category,
-          count: vm.count,
-          difficulty: vm.difficulty,
-          onCategoryChanged: (v) => vm.setCategory(v!),
-          onCountChanged: (v) => vm.setCount(int.parse(v!)),
-          onDifficultyChanged: (v) => vm.setDifficulty(v!),
-          onGenerate: vm.generate,
-        ),
-        if (vm.generated) ...[
-          const SizedBox(height: 12),
-          _ButtonsRow(
-            checked: vm.checked,
-            allAnswered: vm.allAnswered,
-            onCheck: vm.checkAnswers,
-            onReset: vm.reset,
-          ),
-        ],
-        if (vm.checked) ...[
-          const SizedBox(height: 16),
-          ScoreSummary(
-            correct: vm.correctCount,
-            wrong: vm.wrongCount,
-            total: vm.questions.length,
-          ),
-        ],
-        if (vm.generated) ...[
-          const SizedBox(height: 12),
-          TipsBox(category: vm.category, difficulty: vm.difficulty),
-        ],
-        if (vm.generated && vm.questions.isNotEmpty) ...[
-          const SizedBox(height: 4),
-          ...vm.questions.asMap().entries.map((e) => Padding(
-                padding: const EdgeInsets.only(bottom: 12),
-                child: QuestionCard(
-                  question: e.value,
-                  index: e.key,
-                  selectedOption: vm.answers[e.key],
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+          sliver: SliverList(
+            delegate: SliverChildListDelegate([
+              const _InfoCard(),
+              const SizedBox(height: 12),
+              _ControlsCard(
+                category: vm.category,
+                count: vm.count,
+                difficulty: vm.difficulty,
+                onCategoryChanged: (v) => vm.setCategory(v!),
+                onCountChanged: (v) => vm.setCount(int.parse(v!)),
+                onDifficultyChanged: (v) => vm.setDifficulty(v!),
+                onGenerate: vm.generate,
+              ),
+              if (vm.generated) ...[
+                const SizedBox(height: 12),
+                _ButtonsRow(
                   checked: vm.checked,
-                  onSelect: (optIdx) => vm.selectAnswer(e.key, optIdx),
+                  allAnswered: vm.allAnswered,
+                  onCheck: vm.checkAnswers,
+                  onReset: vm.reset,
                 ),
-              )),
-        ],
-        if (!vm.generated) ...[
-          const SizedBox(height: 16),
-          const _EmptyState(),
-        ],
+              ],
+              if (vm.checked) ...[
+                const SizedBox(height: 16),
+                ScoreSummary(
+                  correct: vm.correctCount,
+                  wrong: vm.wrongCount,
+                  total: vm.questions.length,
+                ),
+              ],
+              if (vm.generated) ...[
+                const SizedBox(height: 12),
+                TipsBox(category: vm.category, difficulty: vm.difficulty),
+              ],
+              if (!vm.generated) ...[
+                const SizedBox(height: 16),
+                const _EmptyState(),
+              ],
+            ]),
+          ),
+        ),
+        if (vm.generated && vm.questions.isNotEmpty)
+          SliverPadding(
+            padding: const EdgeInsets.fromLTRB(16, 12, 16, 32),
+            sliver: SliverList.builder(
+              itemCount: vm.questions.length,
+              itemBuilder: (context, index) {
+                final question = vm.questions[index];
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 12),
+                  child: QuestionCard(
+                    question: question,
+                    index: index,
+                    selectedOption: vm.answers[index],
+                    checked: vm.checked,
+                    onSelect: (optIdx) => vm.selectAnswer(index, optIdx),
+                  ),
+                );
+              },
+            ),
+          ),
       ],
     );
   }

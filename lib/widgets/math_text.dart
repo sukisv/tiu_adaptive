@@ -40,7 +40,12 @@ class MathText extends StatelessWidget {
     );
   }
 
+  static final Map<String, List<_Part>> _parseCache = {};
+
   static List<_Part> _parse(String s) {
+    if (_parseCache.containsKey(s)) {
+      return _parseCache[s]!;
+    }
     final parts = <_Part>[];
     // Regex patterns: $$...$$, \[...\], $...$, \(...\)
     final re = RegExp(
@@ -59,7 +64,12 @@ class MathText extends StatelessWidget {
     if (last < s.length) {
       parts.add(_Part(s.substring(last), false, false));
     }
-    return parts.isEmpty ? [_Part(s, false, false)] : parts;
+    final result = parts.isEmpty ? [_Part(s, false, false)] : parts;
+    if (_parseCache.length > 1000) {
+      _parseCache.clear();
+    }
+    _parseCache[s] = result;
+    return result;
   }
 }
 

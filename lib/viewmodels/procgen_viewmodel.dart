@@ -51,7 +51,27 @@ class ProcGenViewModel extends ChangeNotifier {
   }
 
   void generate() {
-    _questions = List.generate(_count, (_) => serviceLocator.questionService.generateQuestion(_category, _difficulty));
+    final generatedQuestions = <Question>[];
+    final seenTexts = <String>{};
+
+    for (int i = 0; i < _count; i++) {
+      Question? uniqueQ;
+      int attempts = 0;
+      while (attempts < 50) {
+        final q = serviceLocator.questionService.generateQuestion(_category, _difficulty);
+        if (!seenTexts.contains(q.text)) {
+          uniqueQ = q;
+          break;
+        }
+        attempts++;
+      }
+
+      final q = uniqueQ ?? serviceLocator.questionService.generateQuestion(_category, _difficulty);
+      seenTexts.add(q.text);
+      generatedQuestions.add(q);
+    }
+
+    _questions = generatedQuestions;
     _answers = {};
     _checked = false;
     _generated = true;
