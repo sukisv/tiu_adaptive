@@ -31,10 +31,34 @@ class ProcGenViewModel extends ChangeNotifier {
 
   int get wrongCount => _questions.length - correctCount;
 
+  /// Maximum number of unique-pattern questions for the current
+  /// category + difficulty combination.
+  int get maxCount =>
+      serviceLocator.questionService.maxQuestionCount(_category, _difficulty);
+
+  /// Available count options, filtered to not exceed [maxCount].
+  List<int> get availableCounts {
+    const all = [3, 5, 10, 20, 30, 50, 75, 100];
+    final max = maxCount;
+    
+    if (max == 0) return [0]; // fallback
+    
+    final filtered = all.where((v) => v <= max).toList();
+    
+    // If the max itself isn't in the list, and we want to offer it (e.g. max is 12, or max is 2)
+    if (filtered.isEmpty || (max < 100 && !filtered.contains(max))) {
+      filtered.add(max);
+    }
+    
+    filtered.sort(); // ensure it's ordered
+    return filtered;
+  }
+
   // ── Commands ────────────────────────────────────────────────────
   void setCategory(String value) {
     if (_category == value) return;
     _category = value;
+    _clampCount();
     notifyListeners();
   }
 
@@ -47,7 +71,16 @@ class ProcGenViewModel extends ChangeNotifier {
   void setDifficulty(String value) {
     if (_difficulty == value) return;
     _difficulty = value;
+    _clampCount();
     notifyListeners();
+  }
+
+  /// Clamps [_count] so it doesn't exceed the current maxCount.
+  void _clampCount() {
+    final available = availableCounts;
+    if (!available.contains(_count)) {
+      _count = available.last; // pick the largest still-valid option
+    }
   }
 
   void generate() {

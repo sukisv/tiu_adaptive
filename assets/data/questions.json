@@ -103,5 +103,534 @@
     "tag": "DATABASE",
     "difficulty": "hard",
     "explanation": "Urutan antrean dari depan ke belakang: Fani -> Dani -> Eko. Jadi, Fani berada di posisi paling depan."
+  },
+
+  {
+    "text": "Berapakah hasil dari 48 ÷ 6 + 3 × 4?",
+    "opts": ["20", "18", "24", "32"],
+    "answer": "20",
+    "topic": "Aritmetika",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Sesuai prioritas operasi (bagi/kali dulu): 48 ÷ 6 = 8 dan 3 × 4 = 12. Kemudian 8 + 12 = 20."
+  },
+  {
+    "text": "Berapakah 15% dari 240?",
+    "opts": ["30", "36", "42", "48"],
+    "answer": "36",
+    "topic": "Aritmetika",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "15% × 240 = 15/100 × 240 = 36."
+  },
+  {
+    "text": "Sebuah kotak berisi 12 bola merah dan 8 bola biru. Berapakah rasio bola merah terhadap total bola?",
+    "opts": ["3 : 5", "2 : 5", "3 : 2", "5 : 3"],
+    "answer": "3 : 5",
+    "topic": "Aritmetika",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Total bola = 12 + 8 = 20. Rasio bola merah : total = 12 : 20 = 3 : 5."
+  },
+  {
+    "text": "Jika harga sebuah buku adalah Rp45.000 dan mendapat diskon 20%, berapakah harga yang harus dibayar?",
+    "opts": ["Rp36.000", "Rp38.000", "Rp40.000", "Rp42.000"],
+    "answer": "Rp36.000",
+    "topic": "Persentase",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Diskon 20% dari Rp45.000 = Rp9.000. Harga bayar = Rp45.000 - Rp9.000 = Rp36.000."
+  },
+  {
+    "text": "Sebuah bak mandi dapat diisi penuh dalam 6 jam oleh keran A dan 3 jam oleh keran B. Jika kedua keran dibuka bersamaan, berapa jam bak mandi akan penuh?",
+    "opts": ["1 jam", "2 jam", "3 jam", "4 jam"],
+    "answer": "2 jam",
+    "topic": "Aritmetika",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Debit A = 1/6 bak per jam, debit B = 1/3 bak per jam. Total = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2 bak per jam. Waktu = 1 ÷ 1/2 = 2 jam."
+  },
+  {
+    "text": "Seorang pedagang membeli barang seharga Rp200.000 dan menjualnya dengan keuntungan 25%. Berapakah harga jualnya?",
+    "opts": ["Rp225.000", "Rp240.000", "Rp250.000", "Rp260.000"],
+    "answer": "Rp250.000",
+    "topic": "Persentase",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Keuntungan = 25% × Rp200.000 = Rp50.000. Harga jual = Rp200.000 + Rp50.000 = Rp250.000."
+  },
+  {
+    "text": "Hasil dari √144 + √81 adalah...",
+    "opts": ["19", "21", "23", "25"],
+    "answer": "21",
+    "topic": "Aritmetika",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "√144 = 12, √81 = 9. Jadi 12 + 9 = 21."
+  },
+  {
+    "text": "Lanjutan dari deret angka berikut: 3, 7, 13, 21, 31, ... adalah...",
+    "opts": ["39", "41", "43", "45"],
+    "answer": "43",
+    "topic": "Deret Angka",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Selisih antar suku: 4, 6, 8, 10, ... (bertambah 2). Suku berikutnya = 31 + 12 = 43."
+  },
+  {
+    "text": "Lanjutan dari deret angka berikut: 1, 1, 2, 3, 5, 8, 13, ... adalah...",
+    "opts": ["18", "19", "20", "21"],
+    "answer": "21",
+    "topic": "Deret Angka",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Ini adalah deret Fibonacci. Setiap suku merupakan jumlah dua suku sebelumnya: 8 + 13 = 21."
+  },
+  {
+    "text": "Lanjutan dari deret angka berikut: 5, 10, 20, 40, ... adalah...",
+    "opts": ["60", "70", "80", "100"],
+    "answer": "80",
+    "topic": "Deret Angka",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Pola deret: setiap suku dikalikan 2. 40 × 2 = 80."
+  },
+  {
+    "text": "Lanjutan dari deret angka berikut: 2, 6, 18, 54, ... adalah...",
+    "opts": ["108", "128", "162", "180"],
+    "answer": "162",
+    "topic": "Deret Angka",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Pola deret: setiap suku dikalikan 3 (deret geometri rasio 3). 54 × 3 = 162."
+  },
+  {
+    "text": "Lanjutan dari deret angka berikut: 1, 4, 9, 16, 25, ... adalah...",
+    "opts": ["30", "36", "42", "49"],
+    "answer": "36",
+    "topic": "Deret Angka",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Pola deret bilangan kuadrat: 1², 2², 3², 4², 5², 6² = 36."
+  },
+  {
+    "text": "Lanjutan dari deret angka berikut: 100, 95, 85, 70, 50, ... adalah...",
+    "opts": ["20", "25", "30", "35"],
+    "answer": "25",
+    "topic": "Deret Angka",
+    "tag": "DATABASE",
+    "difficulty": "hard",
+    "explanation": "Selisih: -5, -10, -15, -20, -25. Pola selisih berkurang 5. Suku berikutnya: 50 - 25 = 25."
+  },
+  {
+    "text": "Lanjutan dari deret angka berikut: 2, 3, 5, 7, 11, 13, ... adalah...",
+    "opts": ["15", "17", "19", "21"],
+    "answer": "17",
+    "topic": "Deret Angka",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Ini adalah deret bilangan prima. Bilangan prima setelah 13 adalah 17."
+  },
+  {
+    "text": "Jika 2x - 7 = 11, berapakah nilai x?",
+    "opts": ["7", "8", "9", "10"],
+    "answer": "9",
+    "topic": "Aljabar",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "2x = 11 + 7 = 18. x = 18 ÷ 2 = 9."
+  },
+  {
+    "text": "Jika x + y = 10 dan x - y = 4, berapakah nilai x?",
+    "opts": ["5", "6", "7", "8"],
+    "answer": "7",
+    "topic": "Aljabar",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Dari x + y = 10 dan x - y = 4, jumlahkan kedua persamaan: 2x = 14, maka x = 7."
+  },
+  {
+    "text": "Jika x² - 5x + 6 = 0, berapakah jumlah kedua akar persamaan tersebut?",
+    "opts": ["3", "5", "6", "7"],
+    "answer": "5",
+    "topic": "Aljabar",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Berdasarkan rumus Vieta, jumlah akar = -b/a = -(-5)/1 = 5. Atau faktorkan: (x-2)(x-3) = 0, akar x = 2 dan x = 3, jumlah = 5."
+  },
+  {
+    "text": "Jika 4(x - 3) = 2(x + 5), berapakah nilai x?",
+    "opts": ["8", "9", "10", "11"],
+    "answer": "11",
+    "topic": "Aljabar",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "4x - 12 = 2x + 10. 4x - 2x = 10 + 12. 2x = 22. x = 11."
+  },
+  {
+    "text": "Sebuah bilangan jika dikalikan 4 kemudian dikurangi 10 hasilnya adalah 30. Berapakah bilangan tersebut?",
+    "opts": ["8", "10", "12", "15"],
+    "answer": "10",
+    "topic": "Aljabar",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Misalkan bilangan = x. 4x - 10 = 30. 4x = 40. x = 10."
+  },
+  {
+    "text": "Jika $2^x = 64$, berapakah nilai x?",
+    "opts": ["4", "5", "6", "7"],
+    "answer": "6",
+    "topic": "Aljabar",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "64 = $2^6$, jadi x = 6."
+  },
+  {
+    "text": "Harga 3 buku tulis dan 2 pensil adalah Rp21.000. Harga 1 buku tulis dan 2 pensil adalah Rp11.000. Berapakah harga 1 buku tulis?",
+    "opts": ["Rp3.000", "Rp4.000", "Rp5.000", "Rp6.000"],
+    "answer": "Rp5.000",
+    "topic": "Aljabar",
+    "tag": "DATABASE",
+    "difficulty": "hard",
+    "explanation": "Misalkan buku = b, pensil = p. 3b + 2p = 21.000 dan b + 2p = 11.000. Kurangkan: 2b = 10.000, b = 5.000."
+  },
+  {
+    "text": "Keliling sebuah persegi panjang adalah 40 cm. Jika panjangnya 12 cm, berapakah lebarnya?",
+    "opts": ["6 cm", "8 cm", "10 cm", "14 cm"],
+    "answer": "8 cm",
+    "topic": "Logika & Geometri",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Keliling = 2(p + l). 40 = 2(12 + l). 20 = 12 + l. l = 8 cm."
+  },
+  {
+    "text": "Berapakah luas segitiga dengan alas 10 cm dan tinggi 14 cm?",
+    "opts": ["60 cm²", "70 cm²", "80 cm²", "140 cm²"],
+    "answer": "70 cm²",
+    "topic": "Logika & Geometri",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Luas segitiga = ½ × alas × tinggi = ½ × 10 × 14 = 70 cm²."
+  },
+  {
+    "text": "Sebuah lingkaran memiliki jari-jari 7 cm. Berapakah kelilingnya? (π = 22/7)",
+    "opts": ["38 cm", "42 cm", "44 cm", "48 cm"],
+    "answer": "44 cm",
+    "topic": "Logika & Geometri",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Keliling = 2πr = 2 × 22/7 × 7 = 44 cm."
+  },
+  {
+    "text": "Berapakah volume kubus dengan rusuk 5 cm?",
+    "opts": ["100 cm³", "125 cm³", "150 cm³", "175 cm³"],
+    "answer": "125 cm³",
+    "topic": "Logika & Geometri",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Volume kubus = s³ = 5³ = 125 cm³."
+  },
+  {
+    "text": "Berapakah luas permukaan balok dengan panjang 8 cm, lebar 5 cm, dan tinggi 4 cm?",
+    "opts": ["160 cm²", "184 cm²", "192 cm²", "200 cm²"],
+    "answer": "184 cm²",
+    "topic": "Logika & Geometri",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Luas permukaan = 2(pl + pt + lt) = 2(40 + 32 + 20) = 2 × 92 = 184 cm²."
+  },
+  {
+    "text": "Sebuah tabung memiliki jari-jari 7 cm dan tinggi 10 cm. Berapakah volumenya? (π = 22/7)",
+    "opts": ["1.320 cm³", "1.540 cm³", "1.760 cm³", "2.100 cm³"],
+    "answer": "1.540 cm³",
+    "topic": "Logika & Geometri",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Volume tabung = πr²t = 22/7 × 7² × 10 = 22/7 × 49 × 10 = 1.540 cm³."
+  },
+  {
+    "text": "Sudut-sudut dalam sebuah segitiga berturut-turut berbanding 2 : 3 : 4. Berapakah sudut terbesar?",
+    "opts": ["60°", "70°", "80°", "90°"],
+    "answer": "80°",
+    "topic": "Logika & Geometri",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Jumlah sudut segitiga = 180°. Bagian total = 2 + 3 + 4 = 9. Sudut terbesar = 4/9 × 180° = 80°."
+  },
+  {
+    "text": "Sebuah trapesium memiliki sisi sejajar 10 cm dan 6 cm dengan tinggi 8 cm. Berapakah luasnya?",
+    "opts": ["48 cm²", "56 cm²", "64 cm²", "72 cm²"],
+    "answer": "64 cm²",
+    "topic": "Logika & Geometri",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Luas trapesium = ½ × (jumlah sisi sejajar) × tinggi = ½ × (10 + 6) × 8 = ½ × 16 × 8 = 64 cm²."
+  },
+  {
+    "text": "Perbandingan umur Andi dan Budi adalah 3 : 5. Jika jumlah umur mereka adalah 40 tahun, berapakah umur Budi?",
+    "opts": ["15 tahun", "20 tahun", "25 tahun", "30 tahun"],
+    "answer": "25 tahun",
+    "topic": "Perbandingan",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Total bagian = 3 + 5 = 8. Umur Budi = 5/8 × 40 = 25 tahun."
+  },
+  {
+    "text": "Jika 5 orang pekerja dapat menyelesaikan pekerjaan dalam 12 hari, berapa hari yang diperlukan jika pekerja ditambah menjadi 10 orang?",
+    "opts": ["4 hari", "5 hari", "6 hari", "8 hari"],
+    "answer": "6 hari",
+    "topic": "Perbandingan",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Perbandingan berbalik nilai. 5 × 12 = 10 × x. x = 60/10 = 6 hari."
+  },
+  {
+    "text": "Rata-rata nilai ujian 5 orang siswa adalah 78. Jika seorang siswa baru bergabung dengan nilai 90, berapakah rata-rata baru?",
+    "opts": ["78", "80", "82", "84"],
+    "answer": "80",
+    "topic": "Aritmetika",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Total nilai awal = 5 × 78 = 390. Total nilai baru = 390 + 90 = 480. Rata-rata baru = 480 ÷ 6 = 80."
+  },
+  {
+    "text": "Dari 40 siswa, 25 siswa menyukai matematika dan 20 siswa menyukai fisika. Jika 10 siswa menyukai keduanya, berapa siswa yang tidak menyukai keduanya?",
+    "opts": ["3", "5", "7", "10"],
+    "answer": "5",
+    "topic": "Logika & Geometri",
+    "tag": "DATABASE",
+    "difficulty": "hard",
+    "explanation": "Berdasarkan himpunan: n(A ∪ B) = n(A) + n(B) - n(A ∩ B) = 25 + 20 - 10 = 35. Yang tidak menyukai keduanya = 40 - 35 = 5."
+  },
+  {
+    "text": "Seorang menabung Rp500.000 di bank dengan bunga tunggal 12% per tahun. Berapakah jumlah tabungan setelah 2 tahun?",
+    "opts": ["Rp560.000", "Rp600.000", "Rp620.000", "Rp680.000"],
+    "answer": "Rp620.000",
+    "topic": "Persentase",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Bunga per tahun = 12% × Rp500.000 = Rp60.000. Bunga 2 tahun = Rp120.000. Total tabungan = Rp500.000 + Rp120.000 = Rp620.000."
+  },
+  {
+    "text": "Jika kecepatan sebuah mobil adalah 80 km/jam, berapa jam waktu yang diperlukan untuk menempuh jarak 320 km?",
+    "opts": ["3 jam", "3,5 jam", "4 jam", "4,5 jam"],
+    "answer": "4 jam",
+    "topic": "Aritmetika",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Waktu = Jarak ÷ Kecepatan = 320 ÷ 80 = 4 jam."
+  },
+  {
+    "text": "Seorang berangkat dari kota A ke kota B dengan kecepatan 60 km/jam selama 2 jam, kemudian melanjutkan dengan kecepatan 90 km/jam selama 1 jam. Berapakah jarak total yang ditempuh?",
+    "opts": ["180 km", "200 km", "210 km", "240 km"],
+    "answer": "210 km",
+    "topic": "Aritmetika",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Jarak 1 = 60 × 2 = 120 km. Jarak 2 = 90 × 1 = 90 km. Total = 120 + 90 = 210 km."
+  },
+  {
+    "text": "Dalam sebuah kelas terdapat 30 siswa. 18 siswa lulus ujian. Berapakah persentase siswa yang tidak lulus?",
+    "opts": ["30%", "35%", "40%", "45%"],
+    "answer": "40%",
+    "topic": "Persentase",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Yang tidak lulus = 30 - 18 = 12 siswa. Persentase = 12/30 × 100% = 40%."
+  },
+  {
+    "text": "Jumlah dua bilangan adalah 50. Perbandingan kedua bilangan tersebut 3 : 7. Berapakah bilangan terkecil?",
+    "opts": ["10", "15", "20", "25"],
+    "answer": "15",
+    "topic": "Perbandingan",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Total bagian = 3 + 7 = 10. Bilangan terkecil = 3/10 × 50 = 15."
+  },
+  {
+    "text": "Guru : Mengajar = Dokter : ...",
+    "opts": ["Resep", "Obat", "Mengobati", "Rumah sakit"],
+    "answer": "Mengobati",
+    "topic": "Analogi Verbal",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Guru memiliki aktivitas utama mengajar, seperti dokter memiliki aktivitas utama mengobati."
+  },
+  {
+    "text": "Palu : Paku = Kunci : ...",
+    "opts": ["Pintu", "Gembok", "Rumah", "Besi"],
+    "answer": "Gembok",
+    "topic": "Analogi Verbal",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Palu digunakan untuk memukul paku (alat dan objeknya). Kunci digunakan untuk membuka gembok."
+  },
+  {
+    "text": "Stetoskop : Dokter = Kuas : ...",
+    "opts": ["Guru", "Pelukis", "Tukang", "Seniman"],
+    "answer": "Pelukis",
+    "topic": "Analogi Verbal",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Stetoskop adalah alat yang digunakan oleh dokter. Kuas adalah alat yang digunakan oleh pelukis."
+  },
+  {
+    "text": "Semua dokter memiliki SIP. Andi adalah dokter. Kesimpulannya...",
+    "opts": [
+      "Andi memiliki SIP",
+      "Andi mungkin memiliki SIP",
+      "Semua pemilik SIP adalah dokter",
+      "Andi bukan dokter"
+    ],
+    "answer": "Andi memiliki SIP",
+    "topic": "Silogisme",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Premis mayor: Semua dokter memiliki SIP. Premis minor: Andi adalah dokter. Kesimpulan: Andi memiliki SIP."
+  },
+  {
+    "text": "Sebagian mahasiswa adalah atlet. Semua atlet berolahraga teratur. Kesimpulannya...",
+    "opts": [
+      "Sebagian mahasiswa berolahraga teratur",
+      "Semua mahasiswa berolahraga teratur",
+      "Semua yang berolahraga teratur adalah mahasiswa",
+      "Tidak ada mahasiswa yang berolahraga teratur"
+    ],
+    "answer": "Sebagian mahasiswa berolahraga teratur",
+    "topic": "Silogisme",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Karena hanya sebagian mahasiswa yang menjadi atlet, dan semua atlet berolahraga teratur, maka hanya sebagian mahasiswa yang berolahraga teratur."
+  },
+  {
+    "text": "Tidak ada reptil yang berdarah panas. Semua buaya adalah reptil. Kesimpulannya...",
+    "opts": [
+      "Semua buaya berdarah panas",
+      "Tidak ada buaya yang berdarah panas",
+      "Sebagian buaya berdarah panas",
+      "Buaya bukan reptil"
+    ],
+    "answer": "Tidak ada buaya yang berdarah panas",
+    "topic": "Silogisme",
+    "tag": "DATABASE",
+    "difficulty": "hard",
+    "explanation": "Premis mayor negatif universal: Tidak ada reptil yang berdarah panas. Semua buaya adalah reptil. Jadi tidak ada buaya yang berdarah panas."
+  },
+  {
+    "text": "Ani lebih tua dari Budi. Cici lebih muda dari Budi. Dedi lebih tua dari Ani. Siapa yang paling muda?",
+    "opts": ["Ani", "Budi", "Cici", "Dedi"],
+    "answer": "Cici",
+    "topic": "Penalaran Analitis",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Urutan dari tua ke muda: Dedi > Ani > Budi > Cici. Jadi Cici paling muda."
+  },
+  {
+    "text": "Di sebuah meja bundar terdapat 4 orang: P, Q, R, S. P duduk berhadapan dengan R. Q duduk di sebelah kanan P. Siapa yang duduk di sebelah kiri P?",
+    "opts": ["Q", "R", "S", "Tidak dapat ditentukan"],
+    "answer": "S",
+    "topic": "Penalaran Analitis",
+    "tag": "DATABASE",
+    "difficulty": "hard",
+    "explanation": "Meja bundar: P berhadapan R, Q di kanan P. Maka S di kiri P. Urutan searah jarum jam: P, Q, R, S."
+  },
+  {
+    "text": "Jika hari ini Kamis, hari apakah 100 hari yang akan datang?",
+    "opts": ["Jumat", "Sabtu", "Minggu", "Senin"],
+    "answer": "Sabtu",
+    "topic": "Penalaran Analitis",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "100 ÷ 7 = 14 sisa 2. Dari Kamis + 2 hari = Sabtu."
+  },
+  {
+    "text": "Sebuah dadu dilempar satu kali. Berapakah peluang munculnya angka genap?",
+    "opts": ["1/6", "1/3", "1/2", "2/3"],
+    "answer": "1/2",
+    "topic": "Peluang",
+    "tag": "DATABASE",
+    "difficulty": "easy",
+    "explanation": "Angka genap pada dadu: 2, 4, 6 (3 angka). Total sisi = 6. Peluang = 3/6 = 1/2."
+  },
+  {
+    "text": "Dari kartu bernomor 1 sampai 20, diambil satu kartu secara acak. Berapakah peluang terambil kartu dengan nomor prima?",
+    "opts": ["2/5", "7/20", "3/10", "9/20"],
+    "answer": "2/5",
+    "topic": "Peluang",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Bilangan prima dari 1-20: 2, 3, 5, 7, 11, 13, 17, 19 (8 bilangan). Peluang = 8/20 = 2/5."
+  },
+  {
+    "text": "Dua dadu dilempar bersamaan. Berapakah peluang jumlah kedua mata dadu = 7?",
+    "opts": ["1/12", "1/9", "1/6", "1/4"],
+    "answer": "1/6",
+    "topic": "Peluang",
+    "tag": "DATABASE",
+    "difficulty": "hard",
+    "explanation": "Kombinasi jumlah 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6 kombinasi. Total kemungkinan = 36. Peluang = 6/36 = 1/6."
+  },
+  {
+    "text": "Berapakah KPK dari 12 dan 18?",
+    "opts": ["24", "36", "48", "72"],
+    "answer": "36",
+    "topic": "Aritmetika",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "12 = 2² × 3. 18 = 2 × 3². KPK = 2² × 3² = 4 × 9 = 36."
+  },
+  {
+    "text": "Jika log 2 = 0,301 dan log 3 = 0,477, berapakah log 12?",
+    "opts": ["0,903", "1,079", "1,204", "1,301"],
+    "answer": "1,079",
+    "topic": "Aljabar",
+    "tag": "DATABASE",
+    "difficulty": "hard",
+    "explanation": "log 12 = log (4 × 3) = log 4 + log 3 = 2 log 2 + log 3 = 2(0,301) + 0,477 = 0,602 + 0,477 = 1,079."
+  },
+  {
+    "text": "Sebuah kerucut memiliki jari-jari 7 cm dan tinggi 24 cm. Berapakah panjang garis pelukis kerucut tersebut?",
+    "opts": ["23 cm", "25 cm", "26 cm", "28 cm"],
+    "answer": "25 cm",
+    "topic": "Logika & Geometri",
+    "tag": "DATABASE",
+    "difficulty": "hard",
+    "explanation": "Garis pelukis = √(r² + t²) = √(7² + 24²) = √(49 + 576) = √625 = 25 cm."
+  },
+  {
+    "text": "Sebuah peta berskala 1 : 500.000. Jarak dua kota pada peta adalah 6 cm. Berapakah jarak sebenarnya?",
+    "opts": ["20 km", "25 km", "30 km", "35 km"],
+    "answer": "30 km",
+    "topic": "Perbandingan",
+    "tag": "DATABASE",
+    "difficulty": "medium",
+    "explanation": "Jarak sebenarnya = 6 × 500.000 = 3.000.000 cm = 30 km."
+  },
+  {
+    "text": "Tiga tahun yang lalu umur ayah 4 kali umur anaknya. Sekarang umur ayah 39 tahun. Berapakah umur anak sekarang?",
+    "opts": ["10 tahun", "11 tahun", "12 tahun", "13 tahun"],
+    "answer": "12 tahun",
+    "topic": "Aljabar",
+    "tag": "DATABASE",
+    "difficulty": "hard",
+    "explanation": "3 tahun lalu umur ayah = 39 - 3 = 36 tahun. Misalkan umur anak sekarang = x, maka 3 tahun lalu = x - 3. Persamaan: 36 = 4(x - 3) → 36 = 4x - 12 → 4x = 48 → x = 12 tahun."
+  },
+  {
+    "text": "Sebuah toko memberikan diskon bertingkat 20% dan 10% untuk sebuah barang seharga Rp500.000. Berapakah harga akhir yang harus dibayar?",
+    "opts": ["Rp350.000", "Rp360.000", "Rp380.000", "Rp400.000"],
+    "answer": "Rp360.000",
+    "topic": "Persentase",
+    "tag": "DATABASE",
+    "difficulty": "hard",
+    "explanation": "Diskon pertama 20%: Rp500.000 × 80% = Rp400.000. Diskon kedua 10%: Rp400.000 × 90% = Rp360.000."
+  },
+  {
+    "text": "Lanjutan deret: 1, 8, 27, 64, ... adalah...",
+    "opts": ["100", "125", "150", "200"],
+    "answer": "125",
+    "topic": "Deret Angka",
+    "tag": "DATABASE",
+    "difficulty": "hard",
+    "explanation": "Ini adalah deret bilangan kubik: 1³=1, 2³=8, 3³=27, 4³=64, 5³=125."
   }
 ]

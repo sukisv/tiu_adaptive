@@ -57,6 +57,8 @@ class _ProcGenView extends StatelessWidget {
                 category: vm.category,
                 count: vm.count,
                 difficulty: vm.difficulty,
+                availableCounts: vm.availableCounts,
+                maxCount: vm.maxCount,
                 onCategoryChanged: (v) => vm.setCategory(v!),
                 onCountChanged: (v) => vm.setCount(int.parse(v!)),
                 onDifficultyChanged: (v) => vm.setDifficulty(v!),
@@ -133,7 +135,11 @@ class _InfoCard extends StatelessWidget {
                 color: AppColors.blueBg,
                 borderRadius: BorderRadius.circular(4),
               ),
-              child: const Icon(Icons.auto_fix_high, color: AppColors.blueTxt, size: 20),
+              child: const Icon(
+                Icons.auto_fix_high,
+                color: AppColors.blueTxt,
+                size: 20,
+              ),
             ),
             const SizedBox(width: 14),
             Expanded(
@@ -142,13 +148,21 @@ class _InfoCard extends StatelessWidget {
                 children: [
                   const Text(
                     'Procedural Generation',
-                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 14, color: AppColors.blueTxt),
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 14,
+                      color: AppColors.blueTxt,
+                    ),
                   ),
                   const SizedBox(height: 4),
                   Text(
                     'Soal dibuat algoritmik: angka dan variabel di-generate acak setiap sesi. '
                     'Setiap soal unik tapi pola logikanya tetap sama. Cocok untuk latihan repetitif tanpa bosan.',
-                    style: TextStyle(fontSize: 13, color: Colors.grey[700], height: 1.5),
+                    style: TextStyle(
+                      fontSize: 13,
+                      color: Colors.grey[700],
+                      height: 1.5,
+                    ),
                   ),
                 ],
               ),
@@ -164,6 +178,8 @@ class _ControlsCard extends StatelessWidget {
   final String category;
   final int count;
   final String difficulty;
+  final List<int> availableCounts;
+  final int maxCount;
   final ValueChanged<String?> onCategoryChanged;
   final ValueChanged<String?> onCountChanged;
   final ValueChanged<String?> onDifficultyChanged;
@@ -173,6 +189,8 @@ class _ControlsCard extends StatelessWidget {
     required this.category,
     required this.count,
     required this.difficulty,
+    required this.availableCounts,
+    required this.maxCount,
     required this.onCategoryChanged,
     required this.onCountChanged,
     required this.onDifficultyChanged,
@@ -187,20 +205,26 @@ class _ControlsCard extends StatelessWidget {
       label: 'Kategori Soal',
       value: category,
       items: const [
-        DropdownMenuItem(value: 'mixed', child: Text('Campuran (semua topik)')),
-        DropdownMenuItem(value: 'arithmetic', child: Text('Aritmetika')),
+        DropdownMenuItem(value: 'mixed', child: Text('Campuran (Semua Topik)')),
+        DropdownMenuItem(
+          value: 'arithmetic',
+          child: Text('Aritmetika & Hitungan'),
+        ),
         DropdownMenuItem(value: 'sequence', child: Text('Deret Angka')),
-        DropdownMenuItem(value: 'algebra', child: Text('Aljabar')),
+        DropdownMenuItem(value: 'algebra', child: Text('Aljabar & Persamaan')),
         DropdownMenuItem(value: 'logic', child: Text('Logika & Geometri')),
       ],
       onChanged: onCategoryChanged,
     );
 
     final countField = _DropdownField(
-      label: 'Jumlah Soal',
+      label: 'Jumlah Soal (maks $maxCount)',
       value: count.toString(),
-      items: ['3', '5', '10', '20', '30', '50', '75', '100']
-          .map((v) => DropdownMenuItem(value: v, child: Text('$v Soal')))
+      items: availableCounts
+          .map(
+            (v) =>
+                DropdownMenuItem(value: v.toString(), child: Text('$v Soal')),
+          )
           .toList(),
       onChanged: onCountChanged,
     );
@@ -305,9 +329,14 @@ class _ButtonsRow extends StatelessWidget {
             style: FilledButton.styleFrom(
               backgroundColor: AppColors.greenTxt,
               foregroundColor: Colors.white,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(4),
+              ),
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 13),
-              textStyle: const TextStyle(fontWeight: FontWeight.w400, fontSize: 13),
+              textStyle: const TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 13,
+              ),
             ),
             icon: const Icon(Icons.check_circle_outline, size: 18),
             label: const Text('Cek Hasil'),
@@ -337,7 +366,11 @@ class _EmptyState extends StatelessWidget {
             const SizedBox(height: 16),
             Text(
               'Belum ada soal',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Colors.grey[500]),
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w400,
+                color: Colors.grey[500],
+              ),
             ),
             const SizedBox(height: 6),
             Text(
